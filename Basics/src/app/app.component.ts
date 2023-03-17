@@ -9,11 +9,14 @@ import { Component } from "@angular/core";
 })
 export class AppComponent {
   name = 'Luis';
-  imgURL = 'https://thumbs.dreamstime.com/b/happy-golden-retriever-puppy-seven-week-old-outdoors-sunny-day-46046484.jpg';
+  imgURL = 'https://picsum.photos/id/237/200/300';
   changeImage(e: KeyboardEvent){
     this.imgURL = (e.target as HTMLInputElement).value
   }
   getName(){
     return this.name;
+  }
+  loadImg(event: string){
+    console.log(event)
   }
 }
