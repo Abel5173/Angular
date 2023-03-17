@@ -1,4 +1,4 @@
-<input (keyup)="changeImage($event)" [value]="imgURL">
+<!-- <input (keyup)="changeImage($event)" [value]="imgURL">
 
 <app-post [postImg]="imgURL" (imageSelected)="(loadImg($event))">
     <p> <strong>Some Caption</strong> </p>
@@ -7,4 +7,6 @@
 
 <p>Hello {{ name.toLocaleLowerCase() }}</p>
 <p>Hello {{getName()}}</p>
-<p>{{18 + 13}}</p>
+<p>{{18 + 13}}</p> -->
+<h2>Parent Component</h2>
+<app-child [uName] = "userName"></app-child>

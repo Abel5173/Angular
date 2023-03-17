@@ -3,6 +3,7 @@ import { BrowserModule } from "@angular/platform-browser";
 
 import { AppComponent } from "./app.component";
 import { PostComponent } from './post/post.component';
+import { ChildComponent } from './child/child.component';
 
   @NgModule({
     imports: [
@@ -10,7 +11,8 @@ import { PostComponent } from './post/post.component';
     ],
     declarations: [
       AppComponent,
-      PostComponent
+      ChildComponent,
+      // PostComponent
     ],
     bootstrap: [AppComponent]
   })
