@@ -1,6 +1,7 @@
 <input (keyup)="changeImage($event)" [value]="imgURL">
 
-<img [src]="imgURL" alt="It is a puppy!">
+<app-post [postImg]="imgURL"></app-post>
+
 <p>Hello {{ name.toLocaleLowerCase() }}</p>
 <p>Hello {{getName()}}</p>
 <p>{{18 + 13}}</p>
