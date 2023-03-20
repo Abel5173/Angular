@@ -8,4 +8,8 @@ import { Component, Input } from '@angular/core';
 export class ChildComponent {
   @Input() uName: string = ''
   text: string = ''
+  work(e: Event): void {
+    this.text = (e.target as HTMLInputElement).value;
+  }
+  
 }
