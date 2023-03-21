@@ -7,3 +7,12 @@
     color: green;
     display: flex;
 }
+
+hr{
+    margin: 20px 0;
+}
+
+.blue{
+    background-color: blue;
+    color: white;
+}
