@@ -10,9 +10,7 @@ import { ChildComponent } from './child/child.component';
       BrowserModule
     ],
     declarations: [
-      AppComponent,
-      ChildComponent,
-      // PostComponent
+      AppComponent, 
     ],
     bootstrap: [AppComponent]
   })
