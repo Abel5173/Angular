@@ -1,42 +1,20 @@
+import { NgStyle } from "@angular/common";
 import { Component } from "@angular/core";
 
 @Component({
-  selector: 'app-root',
-  // template: `<p>Hello World!</p>`,
+  selector: 'app-root', 
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.css'],
-  // styles: ['color: "red"']
+  styleUrls: ['./app.component.css'], 
 })
-export class AppComponent {
-logImg($event: Event) {
-throw new Error('Method not implemented.');
-}
-  name = 'Luis';
-  imgURL = 'https://picsum.photos/id/237/200/300';
-  images = [
-    'https://picsum.photos/id/237/200/300',
-    'https://picsum.photos/id/237/200/300',
-    'https://picsum.photos/id/237/200/300'
+export class AppComponent { 
+  products = [
+    { id: 1, name: 'Product A', description: 'This is product A', price: 10 },
+    { id: 2, name: 'Product B', description: 'This is product B', price: 20 },
+    { id: 3, name: 'Product C', description: 'This is product C', price: 30 },
   ]
-  currentDate = new Date() 
-  cost = 2000
-  temprature = 25.3 
-  pizza = {
-    toppings: ['pepperoni', 'bacon'],
-    size: 'large'
-  }
+  selectedProduct: any;
 
-  blueClass = false
-  fontSize = 36
-
-  changeImage(e: KeyboardEvent){
-    this.imgURL = (e.target as HTMLInputElement).value
+  selectProduct(product: any){
+    this.selectedProduct = product
   }
-  getName(){
-    return this.name;
-  }
-  loadImg(event: string){
-    console.log(event)
-  }
-  // userName: string = "John Smith"
 }

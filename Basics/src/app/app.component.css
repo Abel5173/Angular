@@ -1,18 +1,7 @@
-/* input{
-    display: block;
-    margin: 10 0;
-} */
-
-.login{
-    color: green;
-    display: flex;
+.bg-color{
+    background-color: aquamarine;
 }
 
-hr{
-    margin: 20px 0;
-}
-
-.blue{
-    background-color: blue;
-    color: white;
+body{
+    background-color: aliceblue;
 }

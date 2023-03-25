@@ -1,0 +1,7 @@
+<h1>Product List</h1>
+<ul>
+    <li *ngFor="let product of products" (click)="selectProduct(product)">
+        {{product.name}}
+    </li>
+</ul>
+<app-child [product]="selectedProduct"></app-child>
