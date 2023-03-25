@@ -1,0 +1,9 @@
+.btn{
+    @apply bg-transparent hover:bg-orange-500 text-orange-500 w-20 text-lg font-semibold font-mono hover:text-white px-2 border border-orange-500 hover:border-transparent rounded ml-5;
+}
+label{
+    @apply mr-5 text-2xl font-mono font-bold text-orange-500/90 ;
+}
+input{
+    @apply rounded-md border shadow-lg px-2 border-slate-300 focus:outline-none focus:border-orange-500 text-xl focus:ring-orange-900 w-80 h-10 rounded-md focus:ring-1 font-medium text-orange-700/90 ;
+}

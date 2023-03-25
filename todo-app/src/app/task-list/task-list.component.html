@@ -1,0 +1,10 @@
+<div>
+  <ul *ngIf="tasks.length != 0">
+    <li *ngFor="let task of tasks">
+      <input type="checkbox" (click)="completedTask(task)" />
+      {{ task }}
+      <i class="fa fa-trash" (click)="deleteTask(task)"></i>
+    </li>
+  </ul>
+ 
+</div>

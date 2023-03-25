@@ -1,0 +1,24 @@
+.a{
+    @apply bg-blue-100 shadow-lg w-full h-screen p-5 ;
+}
+h1{
+    @apply text-5xl mt-5 mb-5 font-bold text-orange-600/90 text-center;
+}
+.addTask{
+    @apply flex justify-center ;
+}
+.completedTasks{
+    @apply float-right w-4/12 mt-5
+}
+p{
+    @apply text-center text-teal-700 text-4xl font-semibold mb-5;
+}
+.tasks{
+    @apply float-left mt-10 drop-shadow-xl bg-blue-200 drop-shadow-xl p-2 w-4/12 rounded-md
+}
+.noList{
+    @apply text-2xl text-teal-900 font-medium mb-1 text-center
+}
+.completed{ 
+    @apply float-right mt-10 drop-shadow-xl bg-blue-200 drop-shadow-xl p-2 w-4/12 rounded-md
+}

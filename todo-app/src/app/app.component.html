@@ -1,0 +1,19 @@
+<div class="a">
+  <h1>ToDo App</h1>
+  <app-add-task class="addTask"></app-add-task>
+  <div>
+      <div class="tasks">
+        <p class="taskList">Task List</p>
+        <div class="noList" *ngIf="tasks.length === 0">No tasks added</div>
+        <app-task-list *ngIf="tasks.length != 0"></app-task-list>
+      </div>
+      <div class="completed">
+        <p>Completed tasks</p>
+        <div class="noList" *ngIf="completedTasks.length === 0">No completed tasks</div>
+          <app-completed-tasks
+            class="completedTask"
+            *ngIf="completedTasks.length != 0"
+          ></app-completed-tasks>
+      </div>
+  </div>
+</div>

@@ -1,0 +1,3 @@
+li{
+    @apply text-xl text-blue-500 font-medium mb-1 line-through list-none px-2
+}

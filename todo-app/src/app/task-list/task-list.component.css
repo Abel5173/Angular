@@ -1,0 +1,7 @@
+
+input{
+    @apply animate-pulse w-3 h-3 ml-5;
+}
+li{
+    @apply text-xl text-teal-500 font-medium mb-1
+}
